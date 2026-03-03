@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagrams - LLM Architecture &amp; Reasoning</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    a { color: #5b9bd5; }
+    h1 { margin-bottom: 0.5rem; }
+    .subtitle { color: #555; margin-bottom: 2rem; }
+    .back { display: inline-block; margin-bottom: 2rem; font-size: 0.9rem; }
+    .diagram-card {
+      display: block;
+      margin-bottom: 1.25rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: #1a1a2e;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .diagram-card:hover {
+      border-color: #5b9bd5;
+      box-shadow: 0 2px 8px rgba(91, 155, 213, 0.15);
+    }
+    .diagram-preview {
+      width: 100%;
+      height: 200px;
+      background: #f0f2f5;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .diagram-preview img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .diagram-info {
+      padding: 1rem 1.25rem;
+    }
+    .diagram-title { font-weight: 600; display: block; margin-bottom: 0.25rem; }
+    .diagram-desc { font-size: 0.9rem; color: #555; }
+    .diagram-meta { font-size: 0.8rem; color: #999; margin-top: 0.25rem; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e0e0e0;
+      color: #888;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="/" class="back">&larr; Home</a>
+  <h1>Diagrams</h1>
+  <p class="subtitle">Interactive LLM architecture and reasoning diagrams. Click to open with pan &amp; zoom.</p>
+
+  <a href="llm-architecture-layers/diagram.html" class="diagram-card">
+    <div class="diagram-preview">
+      <img src="llm-architecture-layers/diagram.svg" alt="LLM Architecture Layers">
+    </div>
+    <div class="diagram-info">
+      <span class="diagram-title">LLM Architecture Layers</span>
+      <span class="diagram-desc">Vertical flowchart showing the complete stack from interface to observability layer.</span>
+      <span class="diagram-meta">Interactive &middot; SVG</span>
+    </div>
+  </a>
+
+  <a href="llm-architecture-layers-lr/diagram.html" class="diagram-card">
+    <div class="diagram-preview">
+      <img src="llm-architecture-layers-lr/diagram.svg" alt="LLM Architecture Layers (Left-to-Right)">
+    </div>
+    <div class="diagram-info">
+      <span class="diagram-title">LLM Architecture Layers (Left-to-Right)</span>
+      <span class="diagram-desc">Horizontal variant of the layered architecture for wide-screen viewing.</span>
+      <span class="diagram-meta">Interactive &middot; SVG</span>
+    </div>
+  </a>
+
+  <a href="llm-architecture-mindmap/diagram.html" class="diagram-card">
+    <div class="diagram-preview">
+      <img src="llm-architecture-mindmap/diagram.svg" alt="LLM Architecture Mind Map">
+    </div>
+    <div class="diagram-info">
+      <span class="diagram-title">LLM Architecture Mind Map</span>
+      <span class="diagram-desc">Mind map format showing all components and their relationships at a glance.</span>
+      <span class="diagram-meta">Interactive &middot; SVG</span>
+    </div>
+  </a>
+
+  <a href="llm-claude-code-sequence/diagram.html" class="diagram-card">
+    <div class="diagram-preview">
+      <img src="llm-claude-code-sequence/diagram.svg" alt="Claude Code Sequence Diagram">
+    </div>
+    <div class="diagram-info">
+      <span class="diagram-title">Claude Code Sequence Diagram</span>
+      <span class="diagram-desc">Detailed sequence diagram of Claude Code's agent loop, tool execution, and MCP integration.</span>
+      <span class="diagram-meta">Interactive &middot; SVG</span>
+    </div>
+  </a>
+
+  <a href="llm-reasoning-loops/diagram.html" class="diagram-card">
+    <div class="diagram-preview">
+      <img src="llm-reasoning-loops/diagram.svg" alt="LLM Reasoning Loops">
+    </div>
+    <div class="diagram-info">
+      <span class="diagram-title">LLM Reasoning Loops</span>
+      <span class="diagram-desc">Visualization of chain-of-thought, self-reflection, and agentic reasoning cycles.</span>
+      <span class="diagram-meta">Interactive &middot; SVG</span>
+    </div>
+  </a>
+
+  <footer>&copy; 2026 Rafal Bergman</footer>
+</body>
+</html>
