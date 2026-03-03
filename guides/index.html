@@ -18,7 +18,7 @@
     h1 { margin-bottom: 0.5rem; }
     .subtitle { color: #555; margin-bottom: 2rem; }
     .back { display: inline-block; margin-bottom: 2rem; font-size: 0.9rem; }
-    h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.3rem; margin-top: 2.5rem; margin-bottom: 1rem; }
     .guide {
       display: block;
       padding: 1rem 1.25rem;
@@ -30,6 +30,10 @@
       transition: border-color 0.15s;
     }
     .guide:hover { border-color: #5b9bd5; }
+    .guide.main {
+      border-color: #5b9bd5;
+      background: #f0f7ff;
+    }
     .guide-title { font-weight: 600; display: block; margin-bottom: 0.25rem; }
     .guide-meta { font-size: 0.85rem; color: #888; }
     .badge {
@@ -43,6 +47,11 @@
       margin-left: 0.5rem;
       vertical-align: middle;
     }
+    .section-desc {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -50,38 +59,39 @@
   <h1>Guides</h1>
   <p class="subtitle">Engineering with Claude Code &amp; LLMs</p>
 
-  <h2>Mastering Claude Code</h2>
+  <h2>Main Guide</h2>
 
-  <a href="mastering-claude-code-guide-v4.pdf" class="guide">
-    <span class="guide-title">Mastering Claude Code: An Architecture-Informed Guide for Engineers<span class="badge">Latest</span></span>
-    <span class="guide-meta">Version 4 &middot; PDF &middot; 436 KB</span>
+  <a href="mastering-claude-code-guide-v4.pdf" class="guide main">
+    <span class="guide-title">Mastering Claude Code: An Architecture-Informed Guide for Engineers<span class="badge">v4</span></span>
+    <span class="guide-meta">PDF &middot; 446 KB</span>
   </a>
 
-  <a href="mastering-claude-code-guide-v3.pdf" class="guide">
-    <span class="guide-title">Mastering Claude Code: An Architecture-Informed Guide for Engineers</span>
-    <span class="guide-meta">Version 3 &middot; PDF &middot; 448 KB</span>
-  </a>
+  <h2>Addendums</h2>
+  <p class="section-desc">Supplementary materials covering environment setup, LLM capabilities, and training.</p>
 
-  <a href="mastering-claude-code-guide-v1.pdf" class="guide">
-    <span class="guide-title">Mastering Claude Code: An Architecture-Informed Guide for Engineers</span>
-    <span class="guide-meta">Version 1 &middot; PDF &middot; 512 KB</span>
-  </a>
-
-  <h2>LLMs for Software Engineering</h2>
-
-  <a href="how-models-are-trained-for-swe-bench.pdf" class="guide">
-    <span class="guide-title">How Models Like Claude Opus Are Trained to Excel at SWE-Bench</span>
-    <span class="guide-meta">PDF &middot; 223 KB</span>
+  <a href="env-setup-addendum.pdf" class="guide">
+    <span class="guide-title">Environment Setup Addendum</span>
+    <span class="guide-meta">PDF &middot; 348 KB</span>
   </a>
 
   <a href="llm-capability-map.pdf" class="guide">
     <span class="guide-title">LLM Capability Map: Where Models Excel vs Struggle Across Engineering Tasks</span>
-    <span class="guide-meta">PDF &middot; 268 KB</span>
+    <span class="guide-meta">PDF &middot; 218 KB</span>
   </a>
 
-  <a href="llm-swe-swot-analysis.pdf" class="guide">
+  <a href="llm-swot-analysis.pdf" class="guide">
     <span class="guide-title">LLMs for Software Engineering &mdash; SWOT Analysis</span>
-    <span class="guide-meta">PDF &middot; 213 KB</span>
+    <span class="guide-meta">PDF &middot; 177 KB</span>
+  </a>
+
+  <a href="llm-training-and-inference.pdf" class="guide">
+    <span class="guide-title">LLM Training and Inference</span>
+    <span class="guide-meta">PDF &middot; 195 KB</span>
+  </a>
+
+  <a href="llm-training-for-swe.pdf" class="guide">
+    <span class="guide-title">How Models Are Trained to Excel at Software Engineering</span>
+    <span class="guide-meta">PDF &middot; 211 KB</span>
   </a>
 
   <footer style="margin-top:3rem; padding-top:1.5rem; border-top:1px solid #e0e0e0; color:#888; font-size:0.85rem; text-align:center;">
